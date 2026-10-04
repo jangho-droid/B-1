@@ -1,0 +1,18 @@
+/* Minimal base: font + link colours + state-layer helper used by components. */
+html,body{font-family:var(--font-family-base);color:var(--color-label-normal);-webkit-font-smoothing:antialiased}
+a{color:var(--color-primary-normal);text-decoration:none}
+a:hover{color:var(--color-primary-strong)}
+.wds-state{position:relative;isolation:isolate}
+.wds-state::after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--color-label-normal);opacity:0;pointer-events:none;transition:opacity var(--duration-fast) var(--ease-standard)}
+.wds-state[data-state-tone="light"]:hover::after{opacity:var(--state-light-hover)}
+.wds-state[data-state-tone="light"]:focus-visible::after{opacity:var(--state-light-focus)}
+.wds-state[data-state-tone="light"]:active::after{opacity:var(--state-light-press)}
+.wds-state[data-state-tone="normal"]:hover::after{opacity:var(--state-normal-hover)}
+.wds-state[data-state-tone="normal"]:focus-visible::after{opacity:var(--state-normal-focus)}
+.wds-state[data-state-tone="normal"]:active::after{opacity:var(--state-normal-press)}
+.wds-state[data-state-tone="strong"]:hover::after{opacity:var(--state-strong-hover)}
+.wds-state[data-state-tone="strong"]:focus-visible::after{opacity:var(--state-strong-focus)}
+.wds-state[data-state-tone="strong"]:active::after{opacity:var(--state-strong-press)}
+.wds-state:disabled::after,.wds-state[aria-disabled="true"]::after{display:none}
+@keyframes wds-spin{to{transform:rotate(360deg)}}
+@keyframes wds-skeleton{0%{opacity:1}50%{opacity:.5}100%{opacity:1}}

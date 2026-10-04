@@ -1,0 +1,8 @@
+# 개인 설정 · 디자인 툴 부산물
+.claude/
+.thumbnail
+
+# 팀 내부 자료(기획안 pptx, PRD 원본 등). 공개 저장소라 올리지 않음
+uploads/
+
+node_modules/

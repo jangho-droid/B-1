@@ -1,0 +1,18 @@
+/* Clean semantic aliases over the Figma variables (fig-tokens.css). Light/dark flow through automatically
+   because the referenced fig variables are re-declared under :root[data-theme="dark"] / .dark. */
+:root{
+--color-primary-normal:var(--primary-normal-3);--color-primary-strong:var(--primary-strong);--color-primary-heavy:var(--primary-heavy);
+--color-label-normal:var(--label-normal-4);--color-label-strong:var(--label-strong-2);--color-label-neutral:var(--label-neutral-2);
+--color-label-alternative:var(--label-alternative-2);--color-label-assistive:var(--label-assistive-2);--color-label-disable:var(--label-disable-2);
+--color-bg-normal:var(--background-normal-normal-4);--color-bg-alternative:var(--background-normal-alternative);
+--color-bg-elevated:var(--background-elevated-normal);--color-bg-elevated-alternative:var(--background-elevated-alternative);
+--color-bg-transparent:var(--background-transparent-normal);--color-bg-transparent-alternative:var(--background-transparent-alternative);
+--color-line-normal:var(--line-normal-normal);--color-line-neutral:var(--line-normal-neutral);--color-line-alternative:var(--line-normal-alternative);--color-line-strong:var(--line-normal-strong);
+--color-line-solid-normal:var(--line-solid-normal);--color-line-solid-neutral:var(--line-solid-neutral);--color-line-solid-alternative:var(--line-solid-alternative);--color-line-solid-strong:var(--line-solid-strong);
+--color-fill-normal:var(--fill-normal);--color-fill-strong:var(--fill-strong);--color-fill-alternative:var(--fill-alternative);
+--color-interaction-inactive:var(--interaction-inactive);--color-interaction-disable:var(--interaction-disable);
+--color-inverse-bg:var(--inverse-background);--color-inverse-label:var(--inverse-label);--color-inverse-primary:var(--inverse-primary);
+--color-status-positive:var(--status-positive);--color-status-cautionary:var(--status-cautionary);--color-status-negative:var(--status-negative);
+--color-static-white:var(--static-white);--color-static-black:var(--static-black);
+--color-dimmer:var(--material-dimmer);
+}

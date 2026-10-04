@@ -1,0 +1,16 @@
+/* Spacing, radius, elevation, interaction — values observed across the Figma component set. */
+:root{
+--space-2:2px;--space-4:4px;--space-6:6px;--space-8:8px;--space-10:10px;--space-12:12px;--space-14:14px;--space-16:16px;--space-20:20px;--space-24:24px;--space-28:28px;--space-32:32px;--space-40:40px;--space-48:48px;--space-64:64px;
+--margin-page:20px;--margin-page-mobile:20px;--viewport-lg:1100px;--viewport-xl:1440px;
+--radius-6:6px;--radius-8:8px;--radius-10:10px;--radius-12:12px;--radius-16:16px;--radius-20:20px;--radius-24:24px;--radius-full:1000px;
+--shadow-normal:0px 0px 4px 0px rgba(0,0,0,0.08),0px 4px 8px 0px rgba(0,0,0,0.08),0px 6px 12px 0px rgba(0,0,0,0.12);
+--shadow-emphasize:0px 0px 1px 0px rgba(23,23,23,0.06),0px 4px 10px 0px rgba(23,23,23,0.07),0px 8px 20px 0px rgba(23,23,23,0.1);
+--blur-material:blur(64px); /* @kind other */
+/* Interaction state-layer opacities (overlay colour = label-normal) */
+--state-normal-hover:0.05; /* @kind other */--state-normal-focus:0.08; /* @kind other */--state-normal-press:0.12; /* @kind other */
+--state-light-hover:0.038; /* @kind other */--state-light-focus:0.06; /* @kind other */--state-light-press:0.09; /* @kind other */
+--state-strong-hover:0.075; /* @kind other */--state-strong-focus:0.12; /* @kind other */--state-strong-press:0.18; /* @kind other */
+--duration-fast:120ms; /* @kind other */
+--duration-normal:200ms; /* @kind other */
+--ease-standard:cubic-bezier(0.2,0,0,1); /* @kind other */
+}
